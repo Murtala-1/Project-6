@@ -33,36 +33,36 @@ body{
 }
 
 
-.weapon {
-  background-image: url('./images/weapon.png');
+.pezza {
+  background-image: url('./images/pezza.png');
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.weapon1 {
-  background-image: url('./images/weapon1.png');
+.revolver {
+  background-image: url('./images/revolver.png');
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.weapon2 {
-  background-image: url('./images/weapon2.png');
+.crossbow {
+  background-image: url('./images/crossbow.png');
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.weapon3 {
-  background-image: url('./images/weapon3.png');
+.sharp_axe {
+  background-image: url('./images/sharp_axe.png');
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.weapon4 {
-  background-image: url('./images/weapon4.png');
+.brass_knuckles {
+  background-image: url('./images/brass_knuckles.png');
   background-size: 100%;
   background-position: center center;
   background-repeat: no-repeat;

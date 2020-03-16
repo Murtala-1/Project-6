@@ -34,31 +34,31 @@
     });
   }
 
-  const DEFAULT_WEAPON = 'weapon';
+  const DEFAULT_WEAPON = 'pezza';
 
   Gamebase.DEFAULT_WEAPONS = {
-    "weapon": {
-      key: 'weapon',
+    "pezza": {
+      key: 'pezza',
       position: null,
       damage: 5,
     },
-    "weapon1": {
-      key: 'weapon1',
+    "revolver": {
+      key: 'revolver',
       position: null,
       damage: 50,
     },
-    "weapon2": {
-      key: 'weapon2',
+    "crossbow": {
+      key: 'crossbow',
       position: null,
       damage: 40,
     },
-    "weapon3": {
-      key: 'weapon3',
+    "sharp_axe": {
+      key: 'sharp_axe',
       position: null,
       damage: 30,
     },
-    "weapon4": {
-      key: 'weapon4',
+    "brass_knuckles": {
+      key: 'brass_knuckles',
       position: null,
       damage: 20,
     },
@@ -85,10 +85,10 @@
       this.setup();
       return;
     }
-    this.placeWeapon('weapon1');
-    this.placeWeapon('weapon2');
-    this.placeWeapon('weapon3');
-    this.placeWeapon('weapon4');
+    this.placeWeapon('revolver');
+    this.placeWeapon('crossbow');
+    this.placeWeapon('sharp_axe');
+    this.placeWeapon('brass_knuckles');
   }
 
   Gamebase.prototype.createPlayer1 = function() {
@@ -191,7 +191,7 @@
   Gamebase.prototype.putWeaponInfo = function(position) {
     const cell = getCell(position.col, position.row);
     console.log('putting info weapon ' + newClass);
-    cell.classList.add('weapon');
+    cell.classList.add('pezza');
   }
 
   Gamebase.prototype.removeClass = function(position, classToRemove) {
