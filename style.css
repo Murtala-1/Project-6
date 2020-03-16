@@ -1,0 +1,183 @@
+body{
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#game-container {
+  display: flex;
+  margin-top: 80px;
+  justify-content: center;
+}
+
+
+
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 8vh);
+  grid-template-rows: repeat(10, 8vh);
+  justify-content: center;
+}
+
+
+.grid-item {
+  position: relative;
+  padding: 5px;
+  outline: 1px solid rgba(0, 0, 0, 0.671);
+  
+}
+
+.grid-item::after {
+  content: \00A0;
+}
+
+
+.weapon {
+  background-image: url('./images/weapon.png');
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.weapon1 {
+  background-image: url('./images/weapon1.png');
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.weapon2 {
+  background-image: url('./images/weapon2.png');
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.weapon3 {
+  background-image: url('./images/weapon3.png');
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.weapon4 {
+  background-image: url('./images/weapon4.png');
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.player1 {
+  background-image: url('./images/player1.png');
+  background-size: 110%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.player2 {
+  background-image: url('./images/player2.png');
+  background-size: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.barrier {
+  background-image: url('./images/obstacle.png')
+}
+
+.player-info .player-cell {
+  position: relative;
+  width: 128px;
+  height: 128px;
+}
+
+.player-info {
+  height: 100%;
+  width: 180px;
+  height: 80vh;
+  background-color: rgb(190, 216, 250);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 50px;
+  border: 2px solid black;
+}
+
+.player-weapon {
+  position: absolute;
+  bottom: 2;
+  right: 0;
+  width: 24px;
+  height: 34px;
+  color: #645e00;
+  font-size: large;
+  background-color: chartreuse;
+}
+
+.player-weapon>span {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: gray;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.playerBlood {
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: gray;
+  bottom: 20;
+  background-color: chartreuse;
+  text-align: center;
+}
+
+.playerBlood[data-health="90"] {
+  background-color: #d9ff2f;
+}
+
+.playerBlood[data-health="80"] {
+  background-color: #e0ff2f;
+}
+
+.playerBlood[data-health="70"] {
+  background-color: #ffea2ff1;
+}
+
+.playerBlood[data-health="60"] {
+  background-color: #ffce2ff1;
+}
+.playerBlood[data-health="50"] {
+  background-color: #ffbd2ff1;
+}
+
+.playerBlood[data-health="40"] {
+  background-color: #ffac2f;
+}
+
+.playerBlood[data-health="30"] {
+  background-color: #ff712f;
+}
+.playerBlood[data-health="35"] {
+  background-color: #ff712f;
+}
+
+.playerBlood[data-health="20"] {
+  background-color: #ff6a2f;
+}
+.playerBlood[data-health="25"] {
+  background-color: #ff6a2f;
+}
+
+.playerBlood[data-health="10"] {
+  background-color: #ff2f2f;
+}
+.playerBlood[data-health="15"] {
+  background-color: #ff2f2f;
+}
+.playerBlood[data-health="0"] {
+  background-color: #fd0606;
+}
