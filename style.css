@@ -2,6 +2,8 @@ body{
   background-image: url('bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 #game-container {
@@ -180,4 +182,57 @@ body{
 }
 .playerBlood[data-health="0"] {
   background-color: #fd0606;
+}
+
+.weapons {
+  display: inline-flex;
+  /*width: 60%;*/
+  /*margin-left: 15rem;*/
+}
+#intro {
+  width: 80%;
+  height: 90%;
+  background-color: #eae5e5;
+  opacity: 0.8; 
+  margin: 0 auto;
+  padding: 1.5rem;
+
+}
+li {
+
+  word-spacing: 0.1rem;
+  font-weight: bold;
+}
+
+figure img {
+  max-height: 5rem;
+  max-height: 5rem;
+}
+
+#gameInstuction{
+  background-color: rgba(210, 243, 243, 0.22);
+  display: flex;
+  justify-content: center;
+  color: black;
+  position: relative;
+  padding-top: 0;
+  margin: 0;
+}
+
+button {
+  border-radius: 5%;
+  width: 100px;
+  height: 50px;
+  margin-top: 40px;
+  background-color: #22f506;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+button:hover{
+  border: none;
+  background-color: red;
+  opacity: 0.5;
 }

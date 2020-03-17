@@ -5,14 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Turn based game</title>
   <link rel="stylesheet" href="style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+  <script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("#gameInstuction, #hide").hide();
+      });
+    });
+    </script>
 </head>
 <body>
+ 
+    
+    
+    <div id="gameInstuction">
+      <div style=" margin-left: 9px;">
+      <h1>Turn Based Game</h1>
+      <p style="margin-bottom: 0;background-color: red; color: white; text-align: center;">Openclassroom Project 6</p>
+      <h3 style="position: absolute; top:75px; left: 190px">Created By: Adewale Muritala Akinyemi</h3>
+    </div>
+      <div class="weapons">
+          <figure>
+              <img src="images/pezza.png" height="30px" width="35pxt" alt="pezza">
+              <caption>05</caption>
+          </figure>
+
+          <figure>
+              <img src="images/revolver.png" alt="revolver">
+              <caption>50</caption>
+          </figure>
+
+          <figure>
+              <img src="images/crossbow.png" alt="crossbow">
+              <caption>40</caption>
+          </figure>
+
+          <figure>
+              <img src="images/sharp_axe.png" alt="sharp_axe">
+              <caption>30</caption>
+          </figure>
+          <figure>
+            <img src="images/brass_knuckles.png" alt="brass_knuckles">
+            <caption>20</caption>
+        </figure>
+      </div>
+      <button id="hide">Game Rules:</button>
+      <ul>
+        <li>Each player can move 3 spaces horizontally or vertically or less than that.</li>
+          <li>If you feel healthy, you can find a player on the game board to fight with.</li>
+          <li>The damage depends on the player's weapon</li>
+          <li>Choose another weapon will relace the weapon you had before</li>
+          <li>The player can choose to attack or defend against the next shot</li>
+          <li>If the player chooses to defend themselves, they sustain 50% less damage than normal</li>
+
+      </ul>
+      <button id="hide">Close</button>
+    </div>    
+    
+    
+    
   <div id="game-container">
     <div id="player1-summary" class="player-info"></div>
     <div id="grid-container" ></div>
     <div id="player2-summary" class="player-info">
-
-    </div>
+</div>
   </div>
                                    <!-- Hi Mentor, Uncomment the Step one by one -->
   <script src="jquery.js"></script> 
@@ -22,7 +79,3 @@
   <script src="script.js"></script>
 </body>
 </html>
-<!-- <div class="buttons">
-  <button class="btn-attack-1">Attack</button>
-  <button class="btn-defend-1">Defend</button>
-</div> -->
