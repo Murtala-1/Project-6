@@ -1,4 +1,4 @@
-body{
+body {
   background-image: url('bg.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -12,9 +12,6 @@ body{
   justify-content: center;
 }
 
-
-
-
 #grid-container {
   display: grid;
   grid-template-columns: repeat(10, 8vh);
@@ -22,18 +19,15 @@ body{
   justify-content: center;
 }
 
-
 .grid-item {
   position: relative;
   padding: 5px;
   outline: 1px solid rgba(0, 0, 0, 0.671);
-  
 }
 
 .grid-item::after {
-  content: \00A0;
+  content: \00a0;
 }
-
 
 .pezza {
   background-image: url('./images/pezza.png');
@@ -85,7 +79,7 @@ body{
 }
 
 .barrier {
-  background-image: url('./images/obstacle.png')
+  background-image: url('./images/obstacle.png');
 }
 
 .player-info .player-cell {
@@ -118,7 +112,7 @@ body{
   background-color: chartreuse;
 }
 
-.player-weapon>span {
+.player-weapon > span {
   display: inline-block;
   width: 24px;
   height: 24px;
@@ -137,50 +131,50 @@ body{
   text-align: center;
 }
 
-.playerBlood[data-health="90"] {
+.playerBlood[data-health='90'] {
   background-color: #d9ff2f;
 }
 
-.playerBlood[data-health="80"] {
+.playerBlood[data-health='80'] {
   background-color: #e0ff2f;
 }
 
-.playerBlood[data-health="70"] {
+.playerBlood[data-health='70'] {
   background-color: #ffea2ff1;
 }
 
-.playerBlood[data-health="60"] {
+.playerBlood[data-health='60'] {
   background-color: #ffce2ff1;
 }
-.playerBlood[data-health="50"] {
+.playerBlood[data-health='50'] {
   background-color: #ffbd2ff1;
 }
 
-.playerBlood[data-health="40"] {
+.playerBlood[data-health='40'] {
   background-color: #ffac2f;
 }
 
-.playerBlood[data-health="30"] {
+.playerBlood[data-health='30'] {
   background-color: #ff712f;
 }
-.playerBlood[data-health="35"] {
+.playerBlood[data-health='35'] {
   background-color: #ff712f;
 }
 
-.playerBlood[data-health="20"] {
+.playerBlood[data-health='20'] {
   background-color: #ff6a2f;
 }
-.playerBlood[data-health="25"] {
+.playerBlood[data-health='25'] {
   background-color: #ff6a2f;
 }
 
-.playerBlood[data-health="10"] {
+.playerBlood[data-health='10'] {
   background-color: #ff2f2f;
 }
-.playerBlood[data-health="15"] {
+.playerBlood[data-health='15'] {
   background-color: #ff2f2f;
 }
-.playerBlood[data-health="0"] {
+.playerBlood[data-health='0'] {
   background-color: #fd0606;
 }
 
@@ -193,13 +187,11 @@ body{
   width: 80%;
   height: 90%;
   background-color: #eae5e5;
-  opacity: 0.8; 
+  opacity: 0.8;
   margin: 0 auto;
   padding: 1.5rem;
-
 }
 li {
-
   word-spacing: 0.1rem;
   font-weight: bold;
 }
@@ -209,7 +201,7 @@ figure img {
   max-height: 5rem;
 }
 
-#gameInstuction{
+#gameInstuction {
   background-color: rgba(210, 243, 243, 0.22);
   display: flex;
   justify-content: center;
@@ -231,7 +223,7 @@ button {
   margin-left: 5px;
 }
 
-button:hover{
+button:hover {
   border: none;
   background-color: red;
   opacity: 0.5;
